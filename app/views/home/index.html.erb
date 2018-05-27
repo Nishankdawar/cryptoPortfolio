@@ -1,0 +1,19 @@
+<h1>Hello Everyone</h1>
+
+
+<br/><br/>
+
+<h1>Here</h1>
+<% @coins["data"].each do |key, value| %>
+	<%= value["rank"] %> &nbsp;
+	<%= value["name"]%> &nbsp;
+	$ <%= value["quotes"]["USD"]["price"]%> &nbsp;
+	$ <%= value["quotes"]["USD"]["volume_24h"]%> &nbsp;
+	<%= value["total_supply"]%> <%= value["symbol"]%>&nbsp;
+	<%= value["max_supply"]%> <%= value["symbol"]%> &nbsp;
+	$ <%= value["quotes"]["USD"]["market_cap"]%> &nbsp;
+	<%= value["quotes"]["USD"]["percent_change_1h"]%> &nbsp;
+	<%= value["quotes"]["USD"]["percent_change_24h"]%> &nbsp;
+	<%= value["quotes"]["USD"]["percent_change_7d"]%> &nbsp;
+	<br>
+<% end %>
